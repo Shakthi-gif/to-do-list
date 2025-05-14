@@ -1,0 +1,149 @@
+/* Body background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container with 3D effect */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  transition: transform 0.4s ease;
+}
+
+/* 3D hover animation */
+.container:hover {
+  transform: scale(1.03) rotateX(5deg) rotateY(5deg);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  background: #f0f0f0;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: perspective(600px) rotateX(0deg);
+  transition: all 0.3s ease;
+}
+
+/* 3D lift on hover */
+li:hover {
+  transform: perspective(600px) rotateX(3deg);
+}
+
+/* Actions */
+.actions button {
+  margin-left: 5px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.actions .edit-btn {
+  background-color: #FFA500;
+  color: white;
+}
+
+.actions .delete-btn {
+  background-color: #FF4C4C;
+  color: white;
+}
+
+/* Smooth text update */
+span {
+  transition: color 0.3s ease;
+}
+/* Neon Glow on Hover */
+li:hover {
+  box-shadow: 0 0 15px #43acac;
+}
+
+/* Slide In + Fade In on Add */
+li {
+  animation: slideIn 0.4s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade Out Delete */
+li.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+
+

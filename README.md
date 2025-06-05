@@ -9,7 +9,7 @@ A simple, clean, and interactive To-Do List built using HTML, CSS, and JavaScrip
 
 
 
-🔗 **Live Demo**: [Click to Try](https://your-todo-app.netlify.app) <!-- Replace with your live URL -->
+🔗 **Live Demo**: 
 
 ---
 
@@ -29,6 +29,6 @@ A simple, clean, and interactive To-Do List built using HTML, CSS, and JavaScrip
 - CSS3
 - JavaScript 
 
----
+
 
 
